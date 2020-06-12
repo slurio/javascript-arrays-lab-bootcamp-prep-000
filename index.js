@@ -13,7 +13,8 @@ function destructivelyAppendKitten(name) {
   kittens.shift();
   return kittens;
 } function appendKitten(name) {
-  return [...kittens, name];
+  var newArray = [...kittens, name];
+  return newArray;
 } function prependKitten(name) {
   var array = [name, ...kittens];
   return array;
