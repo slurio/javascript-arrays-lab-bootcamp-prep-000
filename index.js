@@ -14,4 +14,7 @@ function destructivelyAppendKitten(name) {
   return kittens;
 } function appendKitten(name) {
   return [...kittens, name];
+} function prependKitten(name) {
+  var array = [name, ...kittens];
+  return array;
 }
